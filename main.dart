@@ -57,7 +57,7 @@ class _Ekran1State extends State<Paran1> {
         child: Stack(
           alignment: Alignment.topLeft,
         children: [ 
-        Image.asset('assets/logo.jpeg',
+        Image.asset('logo.jpeg',
         width: 300,
         height:150,
         fit: BoxFit.cover,
