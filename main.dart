@@ -53,30 +53,20 @@ class _Ekran1State extends State<Paran1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center( 
-        child: Stack(
-          alignment: Alignment.topLeft,
-        children: [ 
-        Image.asset('logo.jpeg',
-        width: 300,
-        height:150,
-        fit: BoxFit.cover,
-      //  name: "VERSALUX",
-              //style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Icon(Icons.lock, size: 100, color: Colors.blue),
+            SizedBox(height: 20),
+            Text(
+              "VERSALUX",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            const Positioned(
-              top:20,
-              left:40,
-             child:Text( "VERSALUX",
-            style: TextStyle(
-              fontSize:36,
-            )
-            )
-            )
-            ]
-            )
-            )
-            );
+          ],
+        ),
+      ),
+    );
   }
 }
 
